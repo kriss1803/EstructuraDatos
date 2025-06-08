@@ -1,0 +1,58 @@
+using System;
+
+namespace FigurasGeometricas
+{
+    // Clase para representar un Círculo
+    public class Circulo
+    {
+        private double radio; // Variable privada para almacenar el radio
+
+        // Constructor que inicializa el radio del círculo
+        public Circulo(double radio)
+        {
+            this.radio = radio;
+        }
+
+        // Método para calcular el área del círculo
+        // CalcularArea es una función que devuelve un valor double, se utiliza para calcular el área de un círculo, requiere como argumento el radio del círculo
+        public double CalcularArea()
+        {
+            return Math.PI * radio * radio;
+        }
+
+        // Método para calcular el perímetro del círculo (circunferencia)
+        // CalcularPerimetro devuelve un valor double, calcula el perímetro del círculo con el radio dado
+        public double CalcularPerimetro()
+        {
+            return 2 * Math.PI * radio;
+        }
+    }
+
+    // Clase para representar un Rectángulo
+    public class Rectangulo
+    {
+        private double largo; // Variable privada para el largo
+        private double ancho; // Variable privada para el ancho
+
+        // Constructor que inicializa el largo y ancho del rectángulo
+        public Rectangulo(double largo, double ancho)
+        {
+            this.largo = largo;
+            this.ancho = ancho;
+        }
+
+        // Método para calcular el área del rectángulo
+        // CalcularArea devuelve el área como double, se calcula multiplicando largo por ancho
+        public double CalcularArea()
+        {
+            return largo * ancho;
+        }
+
+        // Método para calcular el perímetro del rectángulo
+        // CalcularPerimetro devuelve el perímetro como double, se calcula sumando el doble del largo y del ancho
+        public double CalcularPerimetro()
+        {
+            return 2 * (largo + ancho);
+        }
+    }
+}
